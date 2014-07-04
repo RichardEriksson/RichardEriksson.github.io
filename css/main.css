@@ -167,7 +167,7 @@ header {
     clear: both;
     display: block;
     margin: 0 auto;
-    width: auto;
+    width: 100%;
 }
 
 .image {
