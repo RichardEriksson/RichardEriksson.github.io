@@ -1,0 +1,387 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+img,
+video {
+    
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Type */
+h1 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 400;
+	line-height: 1.619;
+}
+
+/*
+h1:after {
+    background: none repeat scroll 0 0 #444444;
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 0.25em auto 1em;
+    width: 2em;
+}
+*/
+
+
+h2 {
+    color: #181818;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 34px;
+    margin-bottom: 12px;
+}
+
+
+footer h2 {
+    color: #fff;
+    text-align: center;
+	margin-bottom: 0;
+	line-height: 42px;
+}
+
+a {
+    border-bottom: 1px solid #181818;
+    color: #181818;
+    display: inline-block;
+    padding-bottom: 0;
+    text-decoration: none;
+}
+
+.intro a, footer a {
+	color:#fff; 
+	border-bottom:1px solid #fff;
+}
+
+em {
+	font-style:italic;
+}
+
+.intro p {
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+	line-height: 2.36364;
+    margin: 30px auto 0;
+    text-transform: uppercase;
+}
+
+.description p {
+	font-size: 16px;
+    margin-bottom: 26px;
+}
+
+.info p, .info a {
+    font-family: Open Sans;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.info > a {
+    padding-bottom: 4px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    color: #181818;
+    font: 16px/1.625 'Lora',sans-serif;
+}
+header {
+    background: #181818;
+}
+.container {
+	max-width:1000px;
+	margin:0 auto;
+	padding: 0 40px;
+}
+
+.intro {
+    padding: 182px 0 286px;
+    position: relative;
+}
+
+.project {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #dddddd;
+    padding: 130px 0 130px;
+    position: relative;
+}
+
+.info {
+    float: left;
+    width: 32%;
+}
+
+
+.description {
+    float: right;
+    margin-top: 0;
+    width: 60%;
+}
+
+.project img {
+	/*border-radius: 3px 3px 0 0;*/
+    border-top: 25px solid #ddd;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    width: auto;
+}
+
+.image {
+ clear:both;
+ padding-top: 52px;
+}
+
+footer {
+    background: #181818;
+	padding: 88px 0;
+}
+
+
+
+/*
+.project.show h2, .project.show .image, .project.show p  {
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 1s;
+    transition-property: transform, opacity;
+}
+.project h2, .image , .project p{
+    transform: translate3d(0px, 200px, 0px);
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+.project.show .image {
+    transition-delay: 0.1s;
+}
+
+.project.hide h2, .project.hide .image, .project.hide p {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.8s, opacity 0.8s linear;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 725px) {
+
+h1 {
+	font-size: 32px;
+	line-height: 1.625;
+}
+
+h2  {margin-bottom: 15px;}
+
+.info,
+.description {
+	float:none;
+	width: auto;
+}
+
+.intro p { margin-top:25px;}
+
+.info p, .info a {
+	line-height: 26px;
+}
+
+.info > a {
+    padding-bottom: 0;
+}
+
+
+.intro {
+    padding: 78px 0 104px;
+}
+.project {
+	padding: 104px 0;
+}
+
+.description p {margin-top: 26px;}
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
