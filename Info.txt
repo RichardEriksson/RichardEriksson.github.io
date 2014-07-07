@@ -1,8 +1,0 @@
-TjustFastigheter AB utvecklar och effektiviserar lokalförsörjningen för kommunens verksamheter. Jag tog fram designen utifrån deras grafiska profil och önskemål. Jag stod även för implementeringen av ramverket och EPiServer CMS. 
-
-
-TRIS är en struktur för rehabiliteringssamverkan i Sörmland för individer som inte kan arbeta eller riskerar att inte kunna arbeta på grund av sjukdom och behöver stöd från flera parter. Jag stod för framtagandet av designen utifrån deras grafiska profil och önskemål samt var delaktig i implementeringen av ramverket och EPiServer CMS. 
-
-
-
-BrickPile är ett open source CMS som drivs av Marcus Lindblom. Jag blev tillfrågad att vara delaktig när en uppdatering av utseendet skulle göras. Jag tog fram en ny logotyp och ett koncept för det nya gränssnittet. Arbetet pågår fortfarande men spana gärna in den nuvarande versionen. 
