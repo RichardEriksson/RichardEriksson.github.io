@@ -1,70 +1,18 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
-html {
-
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-audio,
-canvas,
-img,
-video {
-    
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
 
 /* Type */
 h1 {
     color: #fff;
-    font-size: 42px;
+    font-size: 2.625em;
     font-weight: 400;
 	line-height: 1.619;
 }
 
-/*
-h1:after {
-    background: none repeat scroll 0 0 #444444;
-    content: "";
-    display: block;
-    height: 1px;
-    margin: 0.25em auto 1em;
-    width: 2em;
-}
-*/
-
-
 h2 {
     color: #181818;
-    font-size: 26px;
+    font-size: 1.625em;
     font-weight: 500;
-    line-height: 34px;
-    margin-bottom: 12px;
+    line-height: 1.30769;
+    margin-bottom: 0.462em;
 }
 
 
@@ -72,7 +20,7 @@ footer h2 {
     color: #fff;
     text-align: center;
 	margin-bottom: 0;
-	line-height: 42px;
+	line-height: 1.61538;
 }
 
 a {
@@ -82,10 +30,19 @@ a {
     padding-bottom: 0;
     text-decoration: none;
 }
+a:hover {
+    border-bottom: 1px solid #666;
+    color: #666;
+}
 
 .intro a, footer a {
 	color:#fff; 
 	border-bottom:1px solid #fff;
+}
+
+.intro a:hover, footer a:hover  {
+    border-bottom: 1px solid #ccc;
+    color: #ccc;
 }
 
 em {
@@ -95,23 +52,22 @@ em {
 .intro p {
     color: #fff;
     font-family: Open Sans;
-    font-size: 11px;
+    font-size: 0.688em;
     letter-spacing: 0.15em;
 	line-height: 2.36364;
-    margin: 30px auto 0;
+    margin: 2.727em auto 0;
     text-transform: uppercase;
 }
 
 .description p {
-	font-size: 16px;
-    margin-bottom: 26px;
+    margin-bottom: 1.625em;
 }
 
 .info p, .info a {
     font-family: Open Sans;
-    font-size: 11px;
+    font-size: 0.688em;
     letter-spacing: 0.15em;
-    line-height: 18px;
+    line-height: 1.63636;
     text-transform: uppercase;
 }
 
@@ -119,32 +75,29 @@ em {
     padding-bottom: 4px;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
+/* Content */
 body {
     color: #181818;
-    font: 16px/1.625 'Lora',sans-serif;
+    font: 100%/1.625 'Lora',sans-serif;
 }
 header {
     background: #181818;
 }
 .container {
-	max-width:1000px;
+	max-width: 62.5em;
 	margin:0 auto;
-	padding: 0 40px;
+	padding: 0 20px;
 }
 
 .intro {
-    padding: 182px 0 286px;
+    padding: 17.875em 0;
     position: relative;
 }
 
 .project {
     background: none repeat scroll 0 0 #fff;
     border-bottom: 1px solid #dddddd;
-    padding: 130px 0 130px;
+    padding: 8.125em 0;
     position: relative;
 }
 
@@ -161,7 +114,6 @@ header {
 }
 
 .project img {
-	/*border-radius: 3px 3px 0 0;*/
     border-top: 25px solid #ddd;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
     clear: both;
@@ -171,62 +123,25 @@ header {
 }
 
 .image {
- clear:both;
- padding-top: 52px;
+	clear:both;
+	padding-top: 3.25em;
 }
 
 footer {
     background: #181818;
-	padding: 88px 0;
+	padding: 5.5em 0;
 }
 
-
-
-/*
-.project.show h2, .project.show .image, .project.show p  {
-    transform: translate3d(0px, 0px, 0px);
-    transition-duration: 1s;
-    transition-property: transform, opacity;
-}
-.project h2, .image , .project p{
-    transform: translate3d(0px, 200px, 0px);
-    transition-duration: 0.3s;
-    transition-property: opacity;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-}
-.project.show .image {
-    transition-delay: 0.1s;
-}
-
-.project.hide h2, .project.hide .image, .project.hide p {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 0.8s, opacity 0.8s linear;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
+/* Media Queries */
 
 @media only screen and (max-width: 725px) {
 
 h1 {
-	font-size: 32px;
+	font-size: 2em;
 	line-height: 1.625;
 }
 
-h2  {margin-bottom: 15px;}
+h2  {margin-bottom: 0.577em;}
 
 .info,
 .description {
@@ -234,10 +149,10 @@ h2  {margin-bottom: 15px;}
 	width: auto;
 }
 
-.intro p { margin-top:25px;}
+.intro p { margin-top: 2.273em;}
 
 .info p, .info a {
-	line-height: 26px;
+	line-height: 2.36364;
 }
 
 .info > a {
@@ -246,142 +161,21 @@ h2  {margin-bottom: 15px;}
 
 
 .intro {
-    padding: 78px 0 104px;
+    padding: 6.5em 0;
 }
 .project {
-	padding: 104px 0;
+	padding: 6.5em 0;
 }
 
-.description p {margin-top: 26px;}
+.description p {margin-top: 1.625em;}
 
+
+.project img {
+    border-top: 15px solid #ddd;
 }
 
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
+footer {
+	padding: 3.25em 0;
 }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
 }
